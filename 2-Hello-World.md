@@ -1,4 +1,4 @@
-#Part 1
+# Part 1
 
 Anything derived from BaseGame needs two methods: load() and Update(). load() is used for creating the objects and specifiying their structure. Update() runs those objects' bahaviors. The text object we are going to display is called SpriteText and it will go into the load method. SpriteText has several properties, but the ones we are going to be setting in this part are the text contents and the position of the text. When creating an object for the app to use, we need to add it to the environment using the Add method. The code is as follows:
 
@@ -30,5 +30,5 @@ Anything derived from BaseGame needs two methods: load() and Update(). load() is
     }
 
 
-#WIP
+# WIP
 
