@@ -1,8 +1,8 @@
-#Preface
+# Preface
 
 This tutorial assumes that you have decent knownledge of Visual Studio and C#. After forking the osu-framework, run the sample game project provided. If there are issues getting that to work, head to #osu-client in the the osu!dev discord server [here](https://discord.gg/ppy) and ask about the issue.
 
-#Setting up a new project
+# Setting up a new project
 
 Create a new project in under the osu-framework solution named HelloWorld. Your project file structure should look like this 
 
@@ -19,7 +19,7 @@ mscorlib is self included in some cases, so we don't need to add it. In case you
 
 ![new file structure](http://i.imgur.com/dUgMKIz.png)
 
-#Making a runnable app
+# Making a runnable app
 
 After adding the references, you can now start writing code. We will have two sources: Program.cs and HelloWorld.cs. Program.cs serves as an entry point for our program while HelloWorld.cs is the contents of the program. 
 
