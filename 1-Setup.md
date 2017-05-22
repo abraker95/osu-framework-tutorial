@@ -32,19 +32,19 @@ Program.cs:
 
 	namespace SampleGame
 	{
-	    public static class Program
+		public static class Program
 		{
 	
 			[STAThread]
 			public static void Main()
 			{
-			    using (Game game = new HelloWorld())
-			    using (GameHost host = Host.GetSuitableHost(@"Hello World!"))
-			    {
-			        host.Run(game);
-			    }
-	        }
- 	    }
+				using (Game game = new HelloWorld())
+				using (GameHost host = Host.GetSuitableHost(@"Hello World!"))
+				{
+			    		host.Run(game);
+			    	}
+	        	}
+ 	    	}
 	}
 
 HelloWorld.cs:
