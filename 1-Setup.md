@@ -38,11 +38,10 @@ Program.cs:
 			[STAThread]
 			public static void Main()
 			{
-			    using (BaseGame game = new HelloWorld())
-			    using (BasicGameHost host = Host.GetSuitableHost(@"Hello World!"))
+			    using (Game game = new HelloWorld())
+			    using (GameHost host = Host.GetSuitableHost(@"Hello World!"))
 			    {
-			        host.Add(game);
-			        host.Run();
+			        host.Run(game);
 			    }
 	        }
  	    }
@@ -54,7 +53,7 @@ HelloWorld.cs:
 
 	namespace HelloWorld
 	{		    
-		class HelloWorld : BaseGame
+		class HelloWorld : Game
 		{
 
 		}
