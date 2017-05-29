@@ -37,8 +37,8 @@ The `Add` method adds objects that are derived from the `Drawable` base class. `
 	Add(new Box
 	{
 		Size = new Vector2(100, 50),			// set the rectangle to be 100x50
-                Position = new Vector2(300, 100),		// set the rectangle to be positioned at (300,100) at its top-left corner
-                Colour = new Color4(1.0f, 0.0f, 1.0f, 1.0f)	// set the rectangle to be magenta
+		Position = new Vector2(300, 100),		// set the rectangle to be positioned at (300,100) at its top-left corner
+		Colour = new Color4(1.0f, 0.0f, 1.0f, 1.0f)	// set the rectangle to be magenta
 	});
 
 # WIP
