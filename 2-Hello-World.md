@@ -41,5 +41,30 @@ The `Add` method adds objects that are derived from the `Drawable` base class. `
 		Colour = new Color4(1.0f, 0.0f, 1.0f, 1.0f)	// set the rectangle to be magenta
 	});
 
+
+A `Container` type allows to add children drawables to itself. Any drawable added as a children will have properties relative to its parent. One of those properties is the positions of the drawables. The child object is contained inside the parent object, so as result it is dependent on the parent object's position. The example below displays a yellow square off to the right with "I am inside a box!" text in the middle. Feel free to change the position of the container to see how its children are affected by it. 
+
+The code below requires `using osu.Framework.Graphics;` to be put on top to use the `Drawable` type in the code. The following code can be added into the `load` method:
+
+
+	Add(new Container
+	{
+		Position = new Vector2(500, 500),	// Position the container at (500,500)
+		Children = new Drawable[]		// Add an array of the following drawables
+		{
+			new Box
+			{
+				Size = new Vector2(200, 200),
+				Position = new Vector2(0, 0),		// This will result in a position of (0,0) relative to (500,500), resulting in an absolute position of (500,500)
+				Colour = new Color4(1.0f, 0.0f, 0.0f, 1.0f)
+			},
+			new SpriteText
+			{
+				Text = @"I am inside a box!",
+				Position = new Vector2(50, 50),		// This will result in a position of (50,50) relative to (500,500), resulting in an absolute position of (550,550)
+				Colour = new Color4(1.0f, 1.0f, 0.0f, 1.0f)
+			}
+		}
+	});
 # WIP
 
