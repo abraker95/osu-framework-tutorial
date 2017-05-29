@@ -32,7 +32,7 @@ Anything derived from `Game` needs two methods: `load()` and `Update()`. `load()
     }
 
 
-The `Add` method adds object that are derived from the `Drawable` base class. `SpriteText` is one type derived from `Drawable`. Another type of object is `Box`. A `Box` object when added to the environemnt displays a rectangle. In this example we will set the `Size`, `Position`, and `Colour` properties of the `Box` object. The following code can be added into the `load` method:
+The `Add` method adds objects that are derived from the `Drawable` base class. `SpriteText` is one type derived from `Drawable`. Another type of object is derived from `Drawable` is `Box`. When a `Box` object is added to the environemnt, a rectangle is displayed. In this example we will set the `Size`, `Position`, and `Colour` properties of the `Box` object. The following code can be added into the `load` method:
 	
 	Add(new Box
         {
