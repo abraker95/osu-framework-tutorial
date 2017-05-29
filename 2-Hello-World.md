@@ -42,7 +42,7 @@ The `Add` method adds objects that are derived from the `Drawable` base class. `
 	});
 
 
-A `Container` type allows to add children drawables to itself. Any drawable added as a children will have properties relative to its parent. One of those properties is the positions of the drawables. The child object is contained inside the parent object, so as result it is dependent on the parent object's position. The example below displays a yellow square off to the right with "I am inside a box!" text in the middle. Feel free to change the position of the container to see how its children are affected by it. 
+A `Container` type allows to add children drawables to itself. Any drawable added as a child will have properties relative to its parent such as `Position`. The child object is contained inside the parent object, so as result it is dependent on the parent object's position. The example below displays a yellow square off to the right with "I am inside a box!" text in the middle. Feel free to change the position of the container to see how its children are affected by it. 
 
 The code below requires `using osu.Framework.Graphics;` to be put on top to use the `Drawable` type in the code. The following code can be added into the `load` method:
 
