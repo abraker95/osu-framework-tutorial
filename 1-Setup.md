@@ -1,6 +1,6 @@
 # Preface
 
-This tutorial assumes that you have decent knownledge of Visual Studio and C#. After forking the osu-framework, run the sample game project provided. If there are issues getting that to work, head to #osu-client in the the osu!dev discord server [here](https://discord.gg/ppy) and ask about the issue.
+This tutorial assumes that you have decent knownledge of Visual Studio and C#. After forking the osu-framework, run the sample game project provided.
 
 # Setting up a new project
 
